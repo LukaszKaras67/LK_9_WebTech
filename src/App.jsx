@@ -9,6 +9,7 @@ import Technology from './assets/components/Technology'
 import Footer from './assets/components/Footer'
 import Infobox from './assets/components/Infobox'
 import Navigation from './assets/components/Nagivation'
+import CourseCard from './assets/components/CourseCard'
 
 
 
@@ -32,6 +33,10 @@ function App() {
       <Student/>
 
       <Infobox/>
+      <h2>Dodatkowe</h2>
+      <CourseCard/>
+
+      
     </>
   );
 }
