@@ -3,62 +3,36 @@ import heroImg from './assets/hero.png'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import './App.css'
+import Header from './assets/components/Header'
+import Student from './assets/components/Student'
+import Technology from './assets/components/Technology'
+import Footer from './assets/components/Footer'
+import Infobox from './assets/components/Infobox'
+import Navigation from './assets/components/Nagivation'
+
+
 
 function App() {
-
-  const app = {
-    name: "WebTech",
-    version: "1.0",
-    author: "Twoje imię i nazwisko",
-    technologiesCount: 3
-  };
-  const technology = {
-  name: "React",
-  category: "Frontend",
-  hours: 30,
-  active: true
-};
-const student = {
-  name: "Łukasz",
-  surname: "Karaś",
-  className: "4P",
-  specialization: "technik programista"
-};
-const course = {
-  name: "Teoria",
-  teacher: "Rafał Taraszka",
-  hours: 6.7,
-  completed: 2
-};
-
   return (
-    <div>
+    <>
+      <Header />
+      <Navigation />
+      <main>
 
-      <h1>{app.name}</h1>
+        <Technology />
 
-      <p>Wersja: {app.version}</p>
+        <Technology />
 
-      <p>Autor: {app.author}</p>
+        <Technology />
 
-      <p>
-        Liczba technologii: {app.technologiesCount}
-      </p>
-      <p>{technology.name}</p>
-      <p>Kategoria: {technology.category}</p>
-      <p>Liczba godzin: {technology.hours}</p>
+      </main>
 
-      <p>Uczeń: {student.name}</p>
-      <p>Klasa: {student.className}</p>
-      <p>Kierunek: {student.specialization}</p>
+      <Footer />
 
-      <section>
-        <h2>{course.name}</h2>
-        <p>Nauczyciel: {course.teacher}</p>
-        <p>Godziny: {course.hours}</p>
-        <p>Ukończone: {course.completed}</p>
-      </section>
-    </div>
-    
+      <Student/>
+
+      <Infobox/>
+    </>
   );
 }
 
