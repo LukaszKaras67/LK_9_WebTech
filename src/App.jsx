@@ -13,8 +13,15 @@ import CourseCard from './assets/components/CourseCard'
 import Product from './assets/components/Product'
 import Counter from './assets/components/Counter'
 
+
+
+ 
+
+
+
+
 function App() {
-    function showMessage() {
+  function showMessage() {
       console.log("Kliknięto przycisk");
   }
   function selectProduct(name) {
@@ -24,8 +31,7 @@ function showTechnology(name) {
     console.log("Wybrano: " + name);  
   }
 
- 
-
+  
   return (
     <>
       <Header />
@@ -65,6 +71,8 @@ function showTechnology(name) {
   
       <h2>useState</h2>
       <Counter />
+
+      
     </>
   );
 }
