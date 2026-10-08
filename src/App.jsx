@@ -20,6 +20,11 @@ function App() {
   function selectProduct(name) {
   console.log("Wybrany produkt: " + name);
 }
+function showTechnology(name) {
+    console.log("Wybrano: " + name);
+  }
+
+ 
 
   return (
     <>
@@ -52,6 +57,12 @@ function App() {
         price={20}
         selectProduct={selectProduct}
       />
+      
+    <button onClick={() => showTechnology("React")}>
+      Pokaż technologię
+    </button>
+  
+  
       <h2>useState</h2>
       <Counter />
     </>
