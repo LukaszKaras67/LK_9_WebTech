@@ -21,7 +21,7 @@ function App() {
   console.log("Wybrany produkt: " + name);
 }
 function showTechnology(name) {
-    console.log("Wybrano: " + name);
+    console.log("Wybrano: " + name);  
   }
 
  
